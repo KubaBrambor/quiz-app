@@ -35,6 +35,8 @@ export default defineNuxtConfig({
         ],
         safelist: ["body", "html"],
       },
+      autoprefixer: {},
+      cssnano: { preset: "default" },
     },
   },
 });
