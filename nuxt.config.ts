@@ -12,4 +12,16 @@ export default defineNuxtConfig({
       },
     },
   },
+  app: {
+    head: {
+      title: "Fastrack Quiz",
+      meta: [{ name: "description", content: "Short quiz about Fastrack" }],
+      link: [
+        {
+          rel: "stylesheet",
+          href: "https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap",
+        },
+      ],
+    },
+  },
 });
