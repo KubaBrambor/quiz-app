@@ -24,4 +24,17 @@ export default defineNuxtConfig({
       ],
     },
   },
+  postcss: {
+    plugins: {
+      "postcss-purgecss": {
+        content: [
+          "./pages/**/*.{vue,js,ts}",
+          "./components/**/*.{vue,js,ts}",
+          "./layouts/**/*.{vue,js,ts}",
+          "./plugins/**/*.{js,ts}",
+        ],
+        safelist: ["body", "html"],
+      },
+    },
+  },
 });
